@@ -7,7 +7,7 @@ $paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores 
               Placeat saepe iusto consequuntur dolores ut esse tenetur. Doloremque saepe aperiam, corrupti ut natus aut? Optio recusandae labore aliquam laborum eveniet unde! Tempora accusamus distinctio asperiores impedit saepe, veritatis dolorum!";
 
 $userWord = trim($_GET["word"]);
-$censuredParagraph = str_replace($userWord, '***', $paragraph);
+$censuredParagraph = str_ireplace($userWord, '***', $paragraph);
 ?>
 
 <!DOCTYPE html>
